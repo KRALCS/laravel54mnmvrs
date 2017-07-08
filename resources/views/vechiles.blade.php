@@ -81,16 +81,7 @@
 
 
 <!-- AngularJS Application Scripts -->
-<script>
-    var app = angular.module('vechilesapp', [])
-        .constant('API_URL', 'http://localhost/laravel54mnmvrs/public/');
-
-    app.config(function($interpolateProvider) {
-        $interpolateProvider.startSymbol('<%');
-        $interpolateProvider.endSymbol('%>');
-    });
-
-</script>
+<script src="{{ URL::to('/') }}/app/app.js"></script>
 <script src="{{ URL::to('/') }}/app/controllers/vechiles.js"></script>
 </body>
 </html>
